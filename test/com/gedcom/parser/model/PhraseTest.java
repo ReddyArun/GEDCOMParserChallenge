@@ -51,24 +51,47 @@ public class PhraseTest {
 		assertEquals(phrase.getValue(), "XXXX");
 	}
 
+	/**
+	 * Test case to check LEVEL should be numeric and positive value
+	 * 
+	 * @throws Exception
+	 */
 	@Test(expected = Exception.class)
 	public void checkInValidInputHavingNegativeLevelValue() throws Exception {
-		// Checking the LEVEL TAG & VALUE
 		String input = "-1 NAME Elizabeth Alexandra Mary /Windsor/";
 		phrase = new Phrase(input);
 	}
 
+	/**
+	 * Test case to check Line should have atleast 2 values LEVEL and TAG
+	 * 
+	 * @throws Exception
+	 */
 	@Test(expected = Exception.class)
 	public void checkInValidInputHavingOnlyLevel() throws Exception {
-		// Checking the LEVEL TAG & VALUE
 		String input = "0";
 		phrase = new Phrase(input);
 	}
 
+	/**
+	 * Test case to check LEVEL should be numeric and positive value
+	 * 
+	 * @throws Exception
+	 */
 	@Test(expected = Exception.class)
 	public void checkInValidInputHavingCharacterInLevel() throws Exception {
-		// Checking the LEVEL TAG & VALUE
 		String input = "S";
+		phrase = new Phrase(input);
+	}
+	
+	/**
+	 * Test case to check LEVEL ID and TAG
+	 * 
+	 * @throws Exception
+	 */
+	@Test(expected = Exception.class)
+	public void checkInValidInputHavingOnlyLevelAndID() throws Exception {
+		String input = "0 @I0001@";
 		phrase = new Phrase(input);
 	}
 }
