@@ -34,7 +34,7 @@ public class PhraseTest {
 		assertEquals(phrase.getId(), null);
 		assertEquals(phrase.getValue(), null);
 
-		// Checking the LEVEL TAG & VALUE
+		// Checking the LEVEL TAG & VALUE with different combination
 		input = "1 @CHAN XXXX";
 		phrase = new Phrase(input);
 		assertEquals(phrase.getLevel(), 1);
@@ -42,7 +42,7 @@ public class PhraseTest {
 		assertEquals(phrase.getId(), null);
 		assertEquals(phrase.getValue(), "XXXX");
 
-		// Checking the LEVEL TAG & VALUE
+		// Checking the LEVEL TAG & VALUE with different combination
 		input = "1 @CHAN@X XXXX";
 		phrase = new Phrase(input);
 		assertEquals(phrase.getLevel(), 1);
