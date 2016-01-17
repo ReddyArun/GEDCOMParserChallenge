@@ -59,12 +59,6 @@ public class Phrase {
 			// To Get LEVEL
 			try {
 				level = Integer.parseInt(values[0]);
-				if (level < 0) {
-					System.out.println("Expected positive value Level : actula value is '" + level
-							+ "', hence parse program terminated!..");
-					throw new Exception("Expected positive value Level : actula value is '" + level
-							+ "', hence parse program terminated!..");
-				}
 			} catch (NumberFormatException e) {
 				System.out
 						.println("Error in the given input line. 1st element should be number, hence parse program terminated!..");

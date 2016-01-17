@@ -47,16 +47,6 @@ public class PhraseTest {
 	}
 
 	/**
-	 * Test case to check LEVEL should be numeric and positive value
-	 * 
-	 * @throws Exception
-	 */
-	@Test(expected = Exception.class)
-	public void checkInValidInputHavingNegativeLevelValue() throws Exception {
-		new Phrase("-1 NAME Elizabeth Alexandra Mary /Windsor/");
-	}
-
-	/**
 	 * Test case to check Line should have atleast 2 values LEVEL and TAG
 	 * 
 	 * @throws Exception
