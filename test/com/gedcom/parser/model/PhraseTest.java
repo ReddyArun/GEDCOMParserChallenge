@@ -8,6 +8,11 @@ public class PhraseTest {
 
 	private Phrase phrase;
 
+	/**
+	 * Check valid input.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void checkValidInput() throws Exception {
 		// Checking the LEVEL TAG & VALUE
@@ -67,9 +72,9 @@ public class PhraseTest {
 	}
 
 	/**
-	 * Test case to check LEVEL ID and TAG
-	 * 
-	 * @throws Exception
+	 * Test case to check LEVEL ID and TAG.
+	 *
+	 * @throws Exception the exception
 	 */
 	@Test(expected = Exception.class)
 	public void checkInValidInputHavingOnlyLevelAndID() throws Exception {
